@@ -144,11 +144,11 @@ class MyHomePage extends StatelessWidget {
         title: const Text('Employee App'),
         backgroundColor: Colors.orangeAccent,
       ),
-      body: ListView(
-       // itemCount: 5,
+      body: SingleChildScrollView(
+        child: Column(
        // itemBuilder: (context,index)
         children: <Widget>[
-      Expanded(child:   Container(
+        Container(
         
                           child: Card(
                             elevation: 4.0,
@@ -183,8 +183,8 @@ class MyHomePage extends StatelessWidget {
                             )  ],),),
 
                           margin: EdgeInsets.only(bottom: 8, left: 16, right: 16),
-                        ),),),
-                         Expanded(child:   Container(
+                        ),),
+                           Container(
         
                           child: Card(
                             elevation: 4.0,
@@ -219,8 +219,8 @@ class MyHomePage extends StatelessWidget {
                             )  ],),),
 
                           margin: EdgeInsets.only(bottom: 8, left: 16, right: 16),
-                        ),),),
-                         Expanded(child:   Container(
+                        ),),
+                            Container(
         
                           child: Card(
                             elevation: 4.0,
@@ -255,8 +255,7 @@ class MyHomePage extends StatelessWidget {
                             )  ],),),
 
                           margin: EdgeInsets.only(bottom: 8, left: 16, right: 16),
-                        ),),),
-                         Expanded(child:   Container(
+                        ),), Container(
         
                           child: Card(
                             elevation: 4.0,
@@ -291,8 +290,7 @@ class MyHomePage extends StatelessWidget {
                             )  ],),),
 
                           margin: EdgeInsets.only(bottom: 8, left: 16, right: 16),
-                        ),),),
-                         Expanded(child:   Container(
+                        ),),   Container(
         
                           child: Card(
                             elevation: 4.0,
@@ -327,13 +325,13 @@ class MyHomePage extends StatelessWidget {
                             )  ],),),
 
                           margin: EdgeInsets.only(bottom: 8, left: 16, right: 16),
-                        ),),),
+                        ),),
                         
                      
         ]),
 
  
-    );
+     ) );
   }
 }
 
